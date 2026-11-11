@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwindcss</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <h1>hello world</h1>
+
+    <!-- colors -->
+     <div class="text-red-500 bg-green-200">
+        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+     </div>
+     <div class="text-black bg-red-200">
+        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+     </div>
+     <div class="text-white bg-black">
+        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+     </div>
+     <div class="text-green-500 bg-blue-200">
+        lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+     </div>
+
+     <!-- border colors -->
+      <input type="text" class="border border-2 border-red-500 placeholder:text-gray-200 m-2" >
+      <input type="text" class="border border-2 border-blue-500 placeholder:text-gray-200 " >
+
+      <!-- space and containers -->
+       <div class="mx-10 bg-black text-white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nisi odit! Harum iusto nihil tempora cumque eaque, suscipit quo nesciunt?
+       </div>
+       <div class="my-10 bg-black text-white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nisi odit! Harum iusto nihil tempora cumque eaque, suscipit quo nesciunt?
+       </div>
+       <div class="mt-10 bg-black text-white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nisi odit! Harum iusto nihil tempora cumque eaque, suscipit quo nesciunt?
+       </div>
+       <div class="ml-10 bg-black text-white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nisi odit! Harum iusto nihil tempora cumque eaque, suscipit quo nesciunt?
+       </div>
+
+       <!-- space between -->
+        <div class="mt-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea ut ipsum pariatur distinctio libero totam facere mollitia soluta, velit neque officiis dignissimos, dolor quod dicta? Officiis vitae cupiditate earum deserunt.
+        </div>
+
+        <!-- typography -->
+         <div>
+         <p class="text-2xl font-serif">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, labore.
+         </p>
+         <p class="text-2xl font-sans">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, labore.
+         </p>
+         <p class="text-2xl font-mono">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, labore.
+         </p>
+         </div>
+
+         <!-- width and height -->
+          <div class="w-screen h-screen bg-black text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sed neque deserunt corporis distinctio tempore architecto aliquid, illum inventore molestiae est cum tenetur magni sint voluptatibus officiis voluptatum impedit explicabo.
+          </div>
+
+          <!-- background -->
+          <div>
+            <img src="./images/background.jpeg" alt="background" class="w-screen h-screen object-cover">
+          </div>
+
+          <!-- gradient colors -->
+          <div class="w-screen h-screen bg-gradient-to-r from-blue-500 to-green-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sed neque deserunt corporis distinctio tempore architecto aliquid, illum inventore molestiae est cum tenetur magni sint voluptatibus officiis voluptatum impedit explicabo.
+          </div>
+
+          <!-- shadows -->
+           <div class="flex gap-4 m-10 justify-center text-center p-6">
+            <div class="w-60 h-60 bg-white text-black shadow-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sed neque deserunt corporis distinctio tempore architecto aliquid, illum inventore molestiae est cum tenetur magni sint voluptatibus officiis voluptatum impedit explicabo.
+            </div>
+            <div class="w-60 h-60 bg-white text-black shadow-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sed neque deserunt corporis distinctio tempore architecto aliquid, illum inventore molestiae est cum tenetur magni sint voluptatibus officiis voluptatum impedit explicabo.
+            </div>
+            <div class="w-60 h-60 bg-white text-black shadow-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sed neque deserunt corporis distinctio tempore architecto aliquid, illum inventore molestiae est cum tenetur magni sint voluptatibus officiis voluptatum impedit explicabo.
+            </div>
+           </div>
+
+           <!-- screen -->
+           <!-- sm:{640px} md:{768px} lg:{1024px} xl:{1280px} 2xl:{1536px} -->
+            <div class="bg-black text-white p-6 sm:bg-red-500 md:bg-green-500 lg:bg-blue-500 xl:bg-yellow-500 2xl:bg-purple-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sed neque deserunt corporis distinctio tempore architecto aliquid, illum inventore molestiae est cum tenetur magni sint voluptatibus officiis voluptatum impedit explicabo.
+            </div>
+
+            <!-- flex box -->
+             <div class="my-10 flex justify-between items-center border-radius border-black  shadow-lg text-black p-6">
+                <a href="">my logo</a>
+                <ul class="flex gap-4">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>    
+                </ul>
+             </div>
+
+             <!-- grid -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-black text-white p-6 rounded-tl-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sed neque deserunt corporis distinctio tempore architecto aliquid, illum inventore molestiae est cum tenetur magni sint voluptatibus officiis voluptatum impedit explicabo.
+                    </div>
+                    <div class="bg-black text-white p-6 rounded-tr-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sed neque deserunt corporis distinctio tempore architecto aliquid, illum inventore molestiae est cum tenetur magni sint voluptatibus officiis voluptatum impedit explicabo.
+                    </div>
+                    <div class="bg-black text-white p-6 rounded-bl-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sed neque deserunt corporis distinctio tempore architecto aliquid, illum inventore molestiae est cum tenetur magni sint voluptatibus officiis voluptatum impedit explicabo.
+                    </div>
+                    <div class="bg-black text-white p-6 rounded-br-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sed neque deserunt corporis distinctio tempore architecto aliquid, illum inventore molestiae est cum tenetur magni sint voluptatibus officiis voluptatum impedit explicabo.
+                    </div>
+                </div>
+</body>
+</html>
